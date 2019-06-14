@@ -1,5 +1,6 @@
 <?php
 
+use App\BranchOffice;
 use App\Client;
 use App\Punch;
 use Illuminate\Database\Seeder;
@@ -14,11 +15,8 @@ class TestSeeder extends Seeder
      */
     public function run()
     {
-        for ($i = 0; $i < 10; $i++) {
-            factory(Client::class)->create([
-                'active' => random_int(0, 1),
-            ]);
-        }
+        factory(BranchOffice::class, 5)->create();
+        factory(Client::class, 10)->create();
 
         for ($i = 0; $i < 50; $i++) {
             factory(Punch::class)->create([

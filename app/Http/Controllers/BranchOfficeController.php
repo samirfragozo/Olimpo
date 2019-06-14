@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\branch_offices;
+use App\BranchOffice;
 use Illuminate\Http\Request;
 
-class BranchOfficesController extends Controller
+class BranchOfficeController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -41,10 +41,10 @@ class BranchOfficesController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\branch_offices  $branch_offices
+     * @param  \App\BranchOffice  $branchOffice
      * @return \Illuminate\Http\Response
      */
-    public function show(branch_offices $branch_offices)
+    public function show(BranchOffice $branchOffice)
     {
         //
     }
@@ -52,10 +52,10 @@ class BranchOfficesController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\branch_offices  $branch_offices
+     * @param  \App\BranchOffice  $branchOffice
      * @return \Illuminate\Http\Response
      */
-    public function edit(branch_offices $branch_offices)
+    public function edit(BranchOffice $branchOffice)
     {
         //
     }
@@ -64,10 +64,10 @@ class BranchOfficesController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\branch_offices  $branch_offices
+     * @param  \App\BranchOffice  $branchOffice
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, branch_offices $branch_offices)
+    public function update(Request $request, BranchOffice $branchOffice)
     {
         //
     }
@@ -75,10 +75,10 @@ class BranchOfficesController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\branch_offices  $branch_offices
+     * @param  \App\BranchOffice  $branchOffice
      * @return \Illuminate\Http\Response
      */
-    public function destroy(branch_offices $branch_offices)
+    public function destroy(BranchOffice $branchOffice)
     {
         //
     }

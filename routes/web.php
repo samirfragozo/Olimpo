@@ -14,6 +14,10 @@ Route::middleware(['auth', 'verified'])->group(function () {
     // Admin
     Route::middleware(['role:admin'])->group(function () {
         // Clients
+        Route::resource('branch_offices', 'BranchOfficeController', ['except' => ['create', 'destroy', 'edit']]);
+        Route::put('branch_offices', 'BranchOfficeController@status');
+
+        // Clients
         Route::resource('clients', 'ClientController', ['except' => ['create', 'destroy', 'edit']]);
         Route::put('clients', 'ClientController@status');
 

@@ -15,6 +15,15 @@ class CreateBranchOfficesTable extends Migration
     {
         Schema::create('branch_offices', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->string('code', 10);
+            $table->string('name', 50);
+            $table->string('address', 50);
+            $table->string('neighborhood', 50);
+            $table->string('city', 50);
+            $table->string('phone', 15)->nullable();
+            $table->string('cellphone', 15)->nullable();
+            $table->string('email', 100)->nullable();
+            $table->boolean('active')->default(1);
             $table->timestamps();
         });
     }
